@@ -13,9 +13,9 @@ int i;
 
 for (i = 0; i < 10; i++)
 {
-putchar(i);
+printf("%i", i);
 }
-putchar("\n");
+printf("\n");
 
 return (0);
 }
