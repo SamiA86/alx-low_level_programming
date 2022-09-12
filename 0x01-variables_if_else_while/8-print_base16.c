@@ -10,6 +10,7 @@ int main(void)
 {
 char c;
 int d;
+
 c = 'a';
 
 while (d < 10) 
