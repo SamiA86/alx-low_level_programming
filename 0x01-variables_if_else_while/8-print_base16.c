@@ -16,14 +16,14 @@ while (d < 10)
 {
 
 putchar(d+'0');
-d++;
+++dd;
 
 }
 
 while (c <= 'f')
 {
 putchar(c);
-c++;
+++c;
 }
 putchar('\n');
 return (0);
