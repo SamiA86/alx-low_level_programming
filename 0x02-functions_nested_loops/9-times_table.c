@@ -17,7 +17,7 @@ _putchar(k + '0');
 if (y != 0 && k < 10)
 {
 _putchar(',');
-putchar(' ');
+_putchar(' ');
 _putchar(' ');
 _putchar(k + '0');
 } else if (k >= 10)
