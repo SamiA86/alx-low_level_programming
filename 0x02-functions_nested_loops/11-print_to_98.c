@@ -16,8 +16,8 @@ n = n + 1;
 printf("\n");
 while (n >= 98)
 {
-printf("%d", n)
+printf("%d", n);
 n = n - 1;
 }
-printf("\n", n);
+printf("\n");
 }
