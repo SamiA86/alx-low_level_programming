@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- * main - print alphabet 10x
- * 
+ * print_alphabet_x10 - print alphabet
+ *
  * Description: using the main function
- * this program prints "Print alpha bet 10x
+ * this program prints "Programming is positive, zero, or negative
  * Return: 0
  */
-void print_alphabet_x10(void)
+void  print_alphabet_x10(void)
 {
 int j;
 int x;
