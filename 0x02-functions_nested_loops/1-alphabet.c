@@ -1,11 +1,12 @@
 #include "main.h"
 /**
- * main - prints alphabet
+ *print_alphabet - print alphabets
  *
- * Description: from the main function 
- * print_alphabet -> "prints the lowercase alphabets
- * Retrun: 0
+ * Description: using the main function
+ * this program prints "Prints smallleter alphabets
+ * Return: 0
  */
+
 void print_alphabet(void)
 {
 int j;
