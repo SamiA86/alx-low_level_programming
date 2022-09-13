@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- * islower - checks if alphabet is lowercase
- *
- * Description: using the main function
- * this program prints "checks wheter it is lowercase or not
- * Return: 1 for lowercas 0 for else
+ * _islower -> checks if the character is lowercase
+ * 
+ * @c: a charcter argument
+ * Return: returns 1 and 0 depending on condition
  */
 int _islower(int c)
 {
