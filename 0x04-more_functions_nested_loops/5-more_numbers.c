@@ -1,19 +1,23 @@
 #include "main.h"
 /**
- * more_numbers - prints 0-14 10x
+ *more_numbers - prints numbers to 14
+ *
+ *Return: returns nothing
  */
+
 void more_numbers(void)
 {
-int i, j;
-
-for (i = 0; i < 10; i++)
-
+int n1, n2;
+for (n1 = 0; n1 < 10; n1++)
 {
-for (j = 0; j <= 14; j++)
+for (n2 = 0; n2 <= 14; n2++)
 {
-_putchar(j + '0');
+if (n2 > 9)
+{
+_putchar((n2 / 10) + '0');
 }
-
-_putchar('\n');
+_putchar((n2 % 10) + '0');
+}
+_putchar(10);
 }
 }
