@@ -17,8 +17,11 @@ if (s[i] == c)
 ptr = &s[i];
 return (ptr);
 }
+if (s == 0)
+{
+return (NULL);
+}
 i++;
 }
-return (0);
 }
 
