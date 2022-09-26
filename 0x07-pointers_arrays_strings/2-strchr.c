@@ -10,16 +10,16 @@
 char *_strchr(char *s, char c)
 {
 int a;
-while (1)
+for (a =0; *(s + a); a++)
 {
 a = *s++;
-if (a == c)
+if (s + a) == c)
 {
-return (s - 1);
+return (s + a);
+}
 }
 if (a == 0)
 {
 return (NULL);
-}
 }
 }
