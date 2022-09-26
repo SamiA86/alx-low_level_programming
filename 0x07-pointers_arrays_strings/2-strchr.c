@@ -20,5 +20,8 @@ return (ptr);
 }
 i++;
 }
+if (*ptr == '\0')
+{
 return ('\0');
+}
 }
