@@ -6,22 +6,19 @@
  * @c: another char
  * Return: a string
  */
+
 char *_strchr(char *s, char c)
 {
-char *ptr;
-int i = 0;
-while (s[i] != '\0')
+int a;
+while (1)
 {
-if (s[i] == c)
+a = *s++;
+if (a == c)
 {
-ptr = &s[i];
-return (ptr);
-}
-if (s == 0)
+return (s - 1);
+}										if (a == 0)
 {
 return (NULL);
 }
-i++;
 }
 }
-
