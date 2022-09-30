@@ -10,17 +10,23 @@
 
 int main(int argc, char *argv[])
 {
-int res, i;
-res = 1;
-if (argc != 3)
+int result = 0, num, i, j, k;
+for (i = 1; i < argc; i++)
+{
+for (j = 0; argv[i][j] != '\0'; j++)
+{
+if (argv[i][j] > '9' || argv[i][j] < '0')
 {
 printf("%s\n", "Error");
 return (1);
 }
-for (i = 1; i < argc; i++)
-{
-	res = res * atoi(*(argv + i));
 }
-printf("%d\n", res);
+}
+for (k = 1; k < argc; k++)
+{
+num = atoi(argv[k]);
+result += num;
+}
+printf("%d\n", result);
 return (0);
 }
