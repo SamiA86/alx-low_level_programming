@@ -25,7 +25,7 @@ for (i = 0; s2[i] != 0; i++)
 s1[len] = s2[i];
 len += 1;
 }
-NS = (char *)malloc(sizeof(char) * (len - 1) + 1);
+NS = (char *)malloc(sizeof(char) * len + 1);
 if (NS == NULL)
 {
 return (NULL);
