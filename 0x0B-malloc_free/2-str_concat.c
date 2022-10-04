@@ -30,7 +30,7 @@ if (NS == NULL)
 {
 return (NULL);
 }
-for (j = 0; j <= len - 1; j++)
+for (j = 0; j < len + 1; j++)
 {
 	NS[j] = s1[j];
 }
