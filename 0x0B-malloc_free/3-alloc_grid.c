@@ -8,19 +8,33 @@
  */
 int **alloc_grid(int width, int height)
 {
-int **NS;
-int l;
-l = width * height;
+int i, j, k, l;
+int **ar;
 if (width <= 0 || height <= 0)
 return (NULL);
-NS = (int *)malloc(sizeof(int) * l);
-if (NS == NULL)
+ar = malloc(height * sizeof(int *));
+if (ar == NULL)
+{
+free(ar);
 return (NULL);
-for (int i = 0; i < width; i++)
-{
-for (int j = 0; j < height; j++)
-{
-NS[i][j] = 0;
 }
-return (NS);
+for (i = 0; i < height; i++)
+{
+ar[i] = malloc(width * sizeof(int));
+if (ar[i] == NULL)
+{
+for (j = i; j >= 0; j--)
+{
+free(ar[j]);
+}
+free(ar);
+return (NULL);
+}
+}
+for (k = 0; k < height; k++)
+{
+for (l = 0; l < width; l++)
+ar[k][l] = 0;
+}
+return (ar);
 }
