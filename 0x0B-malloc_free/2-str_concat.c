@@ -35,6 +35,6 @@ for (j = 0; j < len - 1; j++)
 	NS[j] = s1[j];
 }
 
-s1[j] = '\0'
+s1[j] = '\0';
 return (NS);
 }
