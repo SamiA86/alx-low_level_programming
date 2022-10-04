@@ -12,7 +12,7 @@ int len = 0, j, i;
 char *NS;
 if (s1 == NULL)
 {
-sl = "";
+s1 = "";
 }
 if (s2 == NULL)
 {
