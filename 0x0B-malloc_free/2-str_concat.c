@@ -19,7 +19,7 @@ i++;
 while (s2[j])
 j++;
 l = i + j;
-s = (char *)malloc(l * sizeof(char) + 1);
+s = (char *)malloc(sizeof(char) * l + 1);
 if (s == NULL)
 return (NULL);
 j = 0;
