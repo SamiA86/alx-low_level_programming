@@ -16,10 +16,10 @@ char *s;
 unsigned int index;
 if (nmemb == 0 || size == 0)
 return (NULL);
-ptr = malloc(size * sizeof( unsigned int));
+ptr = malloc(size * sizeof(unsigned int));
 if (ptr == NULL)
 return (NULL);
-s =ptr;
+s = ptr;
 for (index = 0; index < (size * nmemb); index++)
 s[index] = '\0';
 return (ptr);
