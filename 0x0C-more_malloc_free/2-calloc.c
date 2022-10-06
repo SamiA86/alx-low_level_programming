@@ -16,7 +16,7 @@ char *s;
 unsigned int index;
 if (nmemb == 0 || size == 0)
 return (NULL);
-ptr = malloc(size * sizeof(unsigned int));
+ptr = malloc(size * nmemb);
 if (ptr == NULL)
 return (NULL);
 s = ptr;
