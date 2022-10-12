@@ -2,8 +2,9 @@
 /**
  * print_name->prints the name
  *
- * @name parameter
- * @(*f)(char *) function pointer
+ * @name: parameter
+ * @f: function pointer
+ * Return: name string
  */
 
 void print_name(char *name, void (*f)(char *))
