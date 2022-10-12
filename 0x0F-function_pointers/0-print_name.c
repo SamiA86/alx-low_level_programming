@@ -2,13 +2,13 @@
 /**
  * print_name->prints the name
  *
- * @name parameter 
- * @(*f)(char *) function pointer 
+ * @name parameter
+ * @(*f)(char *) function pointer
  */
 
 void print_name(char *name, void (*f)(char *))
 {
 	if (!name || !f)
 		return;
-	f(name):
-}	
+	f(name);
+}
