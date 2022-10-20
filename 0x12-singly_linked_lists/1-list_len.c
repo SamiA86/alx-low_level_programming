@@ -2,7 +2,7 @@
 /**
  * list_len-> a function returns the length of elements in list
  * *@h: head node pointer
- * *Retrun: the length of elements in list
+ * *Return: the length of elements in list
  */
 
 size_t list_len(const list_t *h)
