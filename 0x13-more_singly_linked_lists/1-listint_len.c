@@ -1,13 +1,14 @@
 #include "lists.h"
 /**
- * list_len-> a function returns the length of elements in list
+ * listint_len - Returns the number of elements
  * *@h: head node pointer
  * *Return: the length of elements in list
  */
 
-size_t listint_len(const list_t *h)
+size_t listint_len(const listint_t *h)
+
 {
-	size_t elem = 0;
+size_t elem = 0;
 
 	while (h != NULL)
 	{
